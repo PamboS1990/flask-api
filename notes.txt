@@ -1,0 +1,15 @@
+Docker commands:
+----------------
+docker build -t rest-apis-flask-python .
+docker run -d -p 5000:5000 rest-apis-flask-python
+
+# To run dynamically
+docker run -dp 5000:5000 -w /app -v "$(pwd):/app" rest-apis-flask-python
+
+
+http://127.0.0.1:5000/swagger-ui
+
+# Alembic DB setup
+flask db init
+flask db migrate  # also updates the database if you make any changes to structure
+flask db upgrade
