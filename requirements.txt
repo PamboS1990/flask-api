@@ -9,3 +9,4 @@ passlib
 flask-migrate
 alembic
 gunicorn
+psycopg2

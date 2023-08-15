@@ -4,9 +4,9 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 __pycache__/
-.idea/
 instance/*
 instance/data.db
+.env
 
 # Node artifact files
 node_modules/
